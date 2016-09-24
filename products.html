@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>balamani sandeep linga</title>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style type="text/css">
+	body{
+		background-image:url("http://livehdwallpaper.com/wp-content/uploads/2016/08/Great-White-Shark-Wallpapers-HD-images.jpg"); 
+	}
+	ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10;
+    font-family: Algerian;
+    overflow: hidden;
+    background-color: skyblue;
+    overflow: auto;
+}
+		li {
+    float: left;
+}
+li a{
+    display: block;
+    text-align:center;
+    color:balck;
+    padding: 12px;
+    text-decoration: none;
+}
+form{
+	text-align: center;
+	font-size: 25px;
+}
+
+
+	</style>
+</head>
+<body>
+
+			<ul>
+				<li><a href="#">SANDEEP</a></li>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="products.html">Products</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		<h1 align="center">ORDER FOR THE FRESH FISH MEAT</h1>
+			<form name="the">
+	            Menu:
+						1. 1 KG of Gold Fish = $15.26<br>
+					    2. 1 KG of Tuna Fish= $29.17<br>
+					    3. 1 KG of Shark Fish = $110.83
+						<br></br>
+				select your Type of Fish from the menu <br> <br> <br> <br>
+				select 1 for Gold Fish,<br>select 2 for Tuna Fish,<br>select 3 for Shark Fish<br>
+				<input type="text"  name="Fish"  size="50"><br> <br> <br>
+				 enter your quantity (KGS)::<input type="text"  name="quan"  size="50"><br> <br> <br>
+					
+				total cost for billing :$<input type="text"  name="bill"  size="50"><br><br>
+				<input type="button" value="calculate" onclick="calculate();"/>
+				<input type="reset" value="Reset">
+			</form>
+			<script type="text/javascript">
+      function calculate(){
+                var a = document.the.quan.value;
+				if(document.the.Fish.value=="1"){
+var c=parseInt(a)*15.26;
+
+				}
+				if(document.the.Fish.value=="2"){
+var c=parseInt(a)*29.17;
+
+				}
+				if(document.the.Fish.value=="3"){
+var c=parseInt(a)*110.83;
+
+				}
+        
+
+
+  document.the.bill.value= c;
+     }
+     </script>
+	   
+      </body>
+</html>
